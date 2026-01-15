@@ -502,4 +502,33 @@ def index():
                         '❌ Card DEAD (Authentication Failed)', 
                         `Card: ${data.card}<br>Reason: ${data.message}<br><strong>${data.result}</strong>`
                     );
+                }
+            } catch (error) {
+                showResult('error', '❌ Error', error.message);
+            } finally {
+                document.getElementById('submitBtn').disabled = false;
+            }
+        });
         
+        function addLog(time, message, status) {
+            const logsDiv = document.getElementById('logs');
+            const logEntry = document.createElement('div');
+            logEntry.className = `log-entry ${status}`;
+            logEntry.textContent = `[${time}] ${message}`;
+            logsDiv.appendChild(logEntry);
+            logsDiv.scrollTop = logsDiv.scrollHeight;
+        }
+        
+        function showResult(type, title, content) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.className = `result ${type}`;
+            resultDiv.innerHTML = `<strong>${title}</strong><br><br>${content}`;
+        }
+    </script>
+</body>
+</html>
+'''
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=8080, debug=False)
