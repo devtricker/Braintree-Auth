@@ -113,7 +113,7 @@ def tokenize_and_auth_card(card_number, exp_month, exp_year, cvv):
         
         headers = {
             'accept': '*/*',
-            'authorization': 'Bearer eyJraWQiOiIyMDE4MDQyNjE2LXByb2R1Y3Rpb24iLCJpc3MiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbSIsImFsZyI6IkVTMjU2In0.eyJleHAiOjE3Njg2NTc2NzYsImp0aSI6IjJkNTA0NDRhLWZjNDctNGU5Ni05ZTU5LTJhMmQ3ZDg1ZjY4NyIsInN1YiI6ImRxaDVueHZud3ZtMnFxamgiLCJpc3MiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbSIsIm1lcmNoYW50Ijp7InB1YmxpY19pZCI6ImRxaDVueHZud3ZtMnFxamgiLCJ2ZXJpZnlfY2FyZF9ieV9kZWZhdWx0IjpmYWxzZSwidmVyaWZ5X3dhbGxldF9ieV9kZWZhdWx0IjpmYWxzZX0sInJpZ2h0cyI6WyJtYW5hZ2VfdmF1bHQiXSwic2NvcGUiOlsiQnJhaW50cmVlOlZhdWx0IiwiQnJhaW50cmVlOkNsaWVudFNESyJdLCJvcHRpb25zIjp7Im1lcmNoYW50X2FjY291bnRfaWQiOiJiZXN0b3BwcmVtaXVtYWNjZXNzb3JpZXNncm91cF9pbnN0YW50IiwicGF5cGFsX2NsaWVudF9pZCI6IkFhbmJtNXpHVC1DTWtSNUFKS0o5UjBMa3RQcWxYSW96RENDNTNMQ2EyM3NBVXd0akRBandHM3BsVG1HNy1EanRSM2NGdXZwNEpKLUZ3VjVlIn19.A7Fgqk4g_uMdMTHfVxK9qCpDHt1ZlWi9txoqM2kjcT-wCM53qxA9l9O_OwLVzOwwFqxLr9N6Faq0Yr6HKgENrg',
+            'authorization': 'Bearer eyJraWQiOiIyMDE4MDQyNjE2LXByb2R1Y3Rpb24iLCJpc3MiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbSIsImFsZyI6IkVTMjU2In0.eyJleHAiOjE3NjkzNTM0NDcsImp0aSI6IjAwOWYwZGRhLWU4MWMtNGJiYS05ZjgzLTZlNjc1MjUzYTJhMSIsInN1YiI6ImRxaDVueHZud3ZtMnFxamgiLCJpc3MiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbSIsIm1lcmNoYW50Ijp7InB1YmxpY19pZCI6ImRxaDVueHZud3ZtMnFxamgiLCJ2ZXJpZnlfY2FyZF9ieV9kZWZhdWx0IjpmYWxzZSwidmVyaWZ5X3dhbGxldF9ieV9kZWZhdWx0IjpmYWxzZX0sInJpZ2h0cyI6WyJtYW5hZ2VfdmF1bHQiXSwic2NvcGUiOlsiQnJhaW50cmVlOlZhdWx0IiwiQnJhaW50cmVlOkNsaWVudFNESyJdLCJvcHRpb25zIjp7Im1lcmNoYW50X2FjY291bnRfaWQiOiJiZXN0b3BwcmVtaXVtYWNjZXNzb3JpZXNncm91cF9pbnN0YW50IiwicGF5cGFsX2NsaWVudF9pZCI6IkFhbmJtNXpHVC1DTWtSNUFKS0o5UjBMa3RQcWxYSW96RENDNTNMQ2EyM3NBVXd0akRBandHM3BsVG1HNy1EanRSM2NGdXZwNEpKLUZ3VjVlIn19.kO7xjhUIvYLFB-oXC8pTFZyAosxcnxbbkHV4m9yzVYy59RVhi-DwS7H5iKE-RDivaVXW_kf4OhxLXPWIXdrCXQ',
             'braintree-version': '2018-05-10',
             'content-type': 'application/json',
             'origin': 'https://www.calipercovers.com',
@@ -199,8 +199,8 @@ def add_payment_method(payment_nonce):
         log("🌐 Connecting to Calipercovers...", "info")
         
         cookies = {
-            'cf_clearance': 'KPdEazsyQhaAcy3F6HNL.nzJWa6_LSlYPG.qbq6haOI-1768409138-1.2.1.1-kjBvlrvf4SkFwimziwgs7Pl2Eenigfaiw6DLNdELkBr84yyc0zHFhfDPrJg7li431qgy0jXhr2Q5Cyf_JMTvRc.BzVI7feAEoqKRAnCLYhJ.tfZf8edca7uh.xcQK2DcwjqJbx1IvdaAZIhAI2LnpmwkBL3jSrmt829HNelBLNjL00vHkDUcpleZyjxdEutFdamaIhZx4n4zPfbvZmIUdts3UWXjKeNQDJG2dZ.OsBc',
-            'wordpress_logged_in_9a06d022e5a0d800df86e500459c6102': 'bzhzhz%7C1769618752%7CQzTQQ4ss7YtM0WsWWJQx0qbF2WqY7fIHv9Hiy8QB9i9%7Ca39569c46cc2d944a2eec05bf58770162efc098464b020e9815f77f9687005bd',
+            'cf_clearance': 'tHJrB9UvvtAIKW.xqvdHjU9FocbzlM9Ta0oG44zMh9I-1769266581-1.2.1.1-F9NITE7UaWHVWo7m7luX3AQx5H2PVNeaHdzwtpsFKGDaAqM5w3vLdupV5AyVUbtEAzqPcTpU0fa42tEp6WDlyUQuVdHU2MXcPPhAU.n8Yx8b_.pA6SyEYGqW03aj4MEGv4de8LjPrNWhKl2Hb_nprDTqL_JNr3PvlFFw60lp50UO5Cjw3wrcUPF2ap.70reT3jGOd_PZh3OoFdM1VSt0cP1QSolsMWM3AbDchggRwv0',
+            'wordpress_logged_in_9a06d022e5a0d800df86e500459c6102': 'ocpqwkhavbg%7C1769782031%7Cz1TsZVK7QMfHQOY5r7UswfuAeNFn4Y8pE8A0aMeYfms%7C7aa136fcbfb94bac8d5f4c2ded7594eb57043ad30ec26d6d2c448c9cc0c54033',
         }
         
         headers = {
@@ -217,7 +217,7 @@ def add_payment_method(payment_nonce):
             'braintree_cc_device_data': f'{{"device_session_id":"{int(time.time())}","fraud_merchant_id":null}}',
             'braintree_cc_3ds_nonce_key': '',
             'braintree_cc_config_data': '{"environment":"production","merchantId":"dqh5nxvnwvm2qqjh"}',
-            'woocommerce-add-payment-method-nonce': '7f8c8e2e9e',
+            'woocommerce-add-payment-method-nonce': 'f556b42d06',
             '_wp_http_referer': '/my-account/add-payment-method/',
             'woocommerce_add_payment_method': '1',
         }
@@ -352,7 +352,7 @@ def index():
             margin-top: 10px;
             transition: transform 0.2s;
         }
-        button:hover { transform: translateY(-2px); }
+        button:hover { transform: translateY(-2px);g }
         button:disabled { background: #ccc; cursor: not-allowed; transform: none; }
         .result {
             margin-top: 20px;
